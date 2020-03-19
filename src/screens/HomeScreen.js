@@ -16,12 +16,17 @@ const HomeScreen = ({ navigation }) => {
         <TouchableOpacity onPress={() => navigation.navigate('Counter')} >
           <Text style={styles.text}>Counter</Text>
         </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Color')} >
+          <Text style={styles.text}>Colors</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('RGB')} >
+          <Text style={styles.text}>RGB</Text>
+        </TouchableOpacity>
       </>
   )
 
   return (
     <View>
-      <Text style={styles.text}>"Heey! How you doing?" -Joey</Text>
       <Button style={styles.button} title="Toggle navigation" onPress={() => setShowNav(!showNav)} />
       {showNav ? showNavItems(): null}
     </View>
