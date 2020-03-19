@@ -22,6 +22,12 @@ const HomeScreen = ({ navigation }) => {
         <TouchableOpacity onPress={() => navigation.navigate('RGB')} >
           <Text style={styles.text}>RGB</Text>
         </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Input')} >
+          <Text style={styles.text}>Name input</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Layout')} >
+          <Text style={styles.text}>Layout</Text>
+        </TouchableOpacity>
       </>
   )
 

@@ -7,6 +7,9 @@ import ImageScreen from './src/screens/ImageScreens'
 import CounterScreen from './src/screens/CounterScreen'
 import ColorScreen from './src/screens/ColorScreen'
 import RedGreenBlueScreen from './src/screens/RedGreenBlueScreen'
+import InputField from './src/screens/InputField'
+import FlexLayout from './src/screens/FlexLayout'
+
 
 const navigator = createStackNavigator(
   {
@@ -16,7 +19,9 @@ const navigator = createStackNavigator(
     ImageList: ImageScreen,
     Counter: CounterScreen,
     Color: ColorScreen,
-    RGB: RedGreenBlueScreen
+    RGB: RedGreenBlueScreen,
+    Input: InputField,
+    Layout: FlexLayout
   },
   {
     initialRouteName: "Home",
